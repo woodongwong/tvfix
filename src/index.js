@@ -8,9 +8,9 @@ async function handleRequest(request) {
 
   switch (url.pathname) {
     case '/key1.key':
-      return new Response(new Uint8Array([0x52, 0x1a, 0xe5, 0x78, 0x04, 0xca, 0xd5, 0x49, 0xab, 0x1a, 0xad, 0x80, 0x81, 0x5c, 0x71, 0x01]));
+      return new Response(new Uint8Array([0xef, 0x29, 0x1e, 0x84, 0x62, 0xff, 0x7d, 0x71, 0x84, 0xc4, 0xbf, 0x2e, 0xeb, 0x27, 0x15, 0x59]));
     case '/key2.key':
-      return new Response(new Uint8Array([0xb1, 0x01, 0x91, 0xa0, 0xe1, 0x6c, 0xa8, 0x7a, 0x91, 0x26, 0xc6, 0x14, 0xca, 0xab, 0x04, 0xfc]));
+      return new Response(new Uint8Array([0xa0, 0xed, 0x49, 0xa3, 0x4d, 0x26, 0x1d, 0xa9, 0xc1, 0x70, 0xb3, 0xfd, 0xc6, 0x32, 0xe4, 0xa]));
   }
 
   const init = {
@@ -42,11 +42,11 @@ async function handleRequest(request) {
       return row;
     }).join("\n")
       .replaceAll(/URI="(\w+\.m3u8)"/g, `URI="${baseURL}$1"`)
-      .replace('#EXT-X-VERSION:10', `#EXT-X-VERSION:10\n#EXT-X-KEY:METHOD=AES-128,URI="${url.origin}/key1.key",IV=0X984102d7100a2f0e39c6bb55ec19c530`)
-      .replace('#EXT-X-VERSION:11', `#EXT-X-VERSION:11\n#EXT-X-KEY:METHOD=AES-128,URI="${url.origin}/key2.key",IV=0X67e2e7bdf511af11355293d43fedf83f`);
+      .replace('#EXT-X-VERSION:10', `#EXT-X-VERSION:10\n#EXT-X-KEY:METHOD=AES-128,URI="${url.origin}/key1.key",IV=0X956beb324a48f0beeea94ce96ce58dc8`)
+      .replace('#EXT-X-VERSION:11', `#EXT-X-VERSION:11\n#EXT-X-KEY:METHOD=AES-128,URI="${url.origin}/key2.key",IV=0X00bcd19a025a2981aeb17d374da52861`);
   }
 
-  return new Response(results, {headers: response.headers});
+  return new Response(results, { headers: response.headers });
 }
 
 addEventListener('fetch', event => {
