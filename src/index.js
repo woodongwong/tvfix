@@ -25,25 +25,42 @@ async function handleRequest(request) {
 
   // 处理加密视频 & URI
   if (url.pathname.split('.').pop() === 'm3u8') {
-    results = results.split("\n").map(row => {
-      if (row) {
-        if (row.charAt(0) !== '#') {
-          if (!/^https?:\/\//.test(row)) {
-            if (row.substring(row.length - 5) === '.m3u8') {
-              row = baseURL + row;
-            } else {
-              row = tvfixBaseURL + row;
-            }
+
+    // #EXT-X-MEDIA-SEQUENCE
+    const mediaSequence = (results.match(/(\d+)\.[a-zA-Z]+/) ?? [])[1];
+
+    // 转换成数组 & 过滤空元素
+    results = results.split("\n").filter(item => item);
+
+    // 删除最后一个错误的item
+    if (/^\d+\.[a-zA-Z]+$/.test(results[results.length - 1])) {
+      results.pop();
+    }
+
+    results = results.map((row) => {
+      if (row.charAt(0) !== '#') {
+
+        if (!/^https?:\/\//.test(row)) {
+          if (row.substring(row.length - 5) === '.m3u8') {
+            row = baseURL + row;
+          } else {
+            row = tvfixBaseURL + row;
           }
-        } else if (row.indexOf('TYPE=SUBTITLES,') >= 0) {
-          row = row.replaceAll(/URI="(\w+\.m3u8)"/g, `URI="${tvfixBaseURL}$1"`);
         }
+
+      } else if (mediaSequence !== undefined && row.indexOf('#EXT-X-MEDIA-SEQUENCE:') >= 0) {
+
+        // 修正#EXT-X-MEDIA-SEQUENCE
+        row = `#EXT-X-MEDIA-SEQUENCE:${mediaSequence}`;
+
       }
+
       return row;
     }).join("\n")
       .replaceAll(/URI="(\w+\.m3u8)"/g, `URI="${baseURL}$1"`)
-      .replace('#EXT-X-VERSION:10', `#EXT-X-VERSION:10\n#EXT-X-KEY:METHOD=AES-128,URI="${url.origin}/key1.key",IV=0X956beb324a48f0beeea94ce96ce58dc8`)
-      .replace('#EXT-X-VERSION:11', `#EXT-X-VERSION:11\n#EXT-X-KEY:METHOD=AES-128,URI="${url.origin}/key2.key",IV=0X00bcd19a025a2981aeb17d374da52861`);
+      // 添加#EXT-X-KEY
+      .replace('#EXT-X-VERSION:10', `#EXT-X-VERSION:4\n#EXT-X-KEY:METHOD=AES-128,URI="${url.origin}/key1.key",IV=0X956beb324a48f0beeea94ce96ce58dc8`)
+      .replace('#EXT-X-VERSION:11', `#EXT-X-VERSION:4\n#EXT-X-KEY:METHOD=AES-128,URI="${url.origin}/key2.key",IV=0X00bcd19a025a2981aeb17d374da52861`);
   }
 
   return new Response(results, { headers: response.headers });
