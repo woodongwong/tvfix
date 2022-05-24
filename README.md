@@ -16,7 +16,7 @@ live.tvfix.org（电视匣、电视侠）直播源
 npm install -g wrangler
 
 # 2. clone 代码
-git clone https://github.com/woodongwong/tvfix.git
+git clone --depth=1 https://github.com/woodongwong/tvfix.git
 cd tvfix
 
 # 3. 本地运行
