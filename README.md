@@ -5,6 +5,8 @@ live.tvfix.org（电视匣、电视侠）直播源
 
 代码部署在 cloudflare worker，大家也可以部署到自己的 worker（PS：workers.dev 已墙），或部署在软路由等设备上。
 
+***tvfix.woodong.workers.dev 每日的使用量已经超出了免费额度，希望大家能自己部署***
+
 ### 部署
 
 部署到 cloudflare workers 可以参考官方文档：https://developers.cloudflare.com/workers/
