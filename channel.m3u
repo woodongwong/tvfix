@@ -253,10 +253,6 @@ https://tvfix.woodong.workers.dev/hls/mydy2.m3u8
 https://tvfix.woodong.workers.dev/hls/tyjd.m3u8
 #EXTINF:-1 group-title="香港",天映经典(第2声道)
 https://tvfix.woodong.workers.dev/hls/tyjd2.m3u8
-#EXTINF:-1 group-title="香港",天映频道
-https://tvfix.woodong.workers.dev/hls/typd.m3u8
-#EXTINF:-1 group-title="香港",卫视电影台
-https://tvfix.woodong.workers.dev/hls/starmovies.m3u8
 #EXTINF:-1 group-title="新闻频道",CCTV-13高清
 https://tvfix.woodong.workers.dev/hls/cctv13hd.m3u8
 #EXTINF:-1 group-title="新闻频道",无线新闻台
@@ -289,80 +285,6 @@ https://tvfix.woodong.workers.dev/hls/chchd.m3u8
 https://tvfix.woodong.workers.dev/hls/mydy2.m3u8
 #EXTINF:-1 group-title="电影频道",美亚电影台(粤语)
 https://tvfix.woodong.workers.dev/hls/mydy.m3u8
-#EXTINF:-1 group-title="电影频道",天映频道
-https://tvfix.woodong.workers.dev/hls/typd.m3u8
-#EXTINF:-1 group-title="电影频道",卫视电影台
-https://tvfix.woodong.workers.dev/hls/starmovies.m3u8
-#EXTINF:-1 group-title="电影频道",HBO(粤语繁体)
-https://tvfix.woodong.workers.dev/hls/hbo.m3u8
-#EXTINF:-1 group-title="电影频道",HBO(粤语简体)
-https://tvfix.woodong.workers.dev/hls/hbo2.m3u8
-#EXTINF:-1 group-title="电影频道",HBO(普通话繁体)
-https://tvfix.woodong.workers.dev/hls/hbo3.m3u8
-#EXTINF:-1 group-title="电影频道",HBO(普通话简体)
-https://tvfix.woodong.workers.dev/hls/hbo4.m3u8
-#EXTINF:-1 group-title="电影频道",HBO(英语繁体)
-https://tvfix.woodong.workers.dev/hls/hbo5.m3u8
-#EXTINF:-1 group-title="电影频道",HBO(英语简体)
-https://tvfix.woodong.workers.dev/hls/hbo6.m3u8
-#EXTINF:-1 group-title="电影频道",HBO(英语英文)
-https://tvfix.woodong.workers.dev/hls/hbo7.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Hits(粤语繁体)
-https://tvfix.woodong.workers.dev/hls/hbohits.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Hits(粤语简体)
-https://tvfix.woodong.workers.dev/hls/hbohits2.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Hits(普通话繁体)
-https://tvfix.woodong.workers.dev/hls/hbohits3.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Hits(普通话简体)
-https://tvfix.woodong.workers.dev/hls/hbohits4.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Hits(英语繁体)
-https://tvfix.woodong.workers.dev/hls/hbohits5.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Hits(英语简体)
-https://tvfix.woodong.workers.dev/hls/hbohits6.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Hits(英语英文)
-https://tvfix.woodong.workers.dev/hls/hbohits7.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Family(粤语繁体)
-https://tvfix.woodong.workers.dev/hls/hbofamily.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Family(粤语简体)
-https://tvfix.woodong.workers.dev/hls/hbofamily2.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Family(普通话繁体)
-https://tvfix.woodong.workers.dev/hls/hbofamily3.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Family(普通话简体)
-https://tvfix.woodong.workers.dev/hls/hbofamily4.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Family(英语繁体)
-https://tvfix.woodong.workers.dev/hls/hbofamily5.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Family(英语简体)
-https://tvfix.woodong.workers.dev/hls/hbofamily6.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Family(英语英文)
-https://tvfix.woodong.workers.dev/hls/hbofamily7.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Signature(粤语繁体)
-https://tvfix.woodong.workers.dev/hls/hbosignature.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Signature(粤语简体)
-https://tvfix.woodong.workers.dev/hls/hbosignature2.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Signature(普通话繁体)
-https://tvfix.woodong.workers.dev/hls/hbosignature3.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Signature(普通话简体)
-https://tvfix.woodong.workers.dev/hls/hbosignature4.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Signature(英语繁体)
-https://tvfix.woodong.workers.dev/hls/hbosignature5.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Signature(英语简体)
-https://tvfix.woodong.workers.dev/hls/hbosignature6.m3u8
-#EXTINF:-1 group-title="电影频道",HBO Signature(英语英文)
-https://tvfix.woodong.workers.dev/hls/hbosignature7.m3u8
-#EXTINF:-1 group-title="电影频道",CINEMAX(粤语繁体)
-https://tvfix.woodong.workers.dev/hls/cinemax.m3u8
-#EXTINF:-1 group-title="电影频道",CINEMAX(粤语简体)
-https://tvfix.woodong.workers.dev/hls/cinemax2.m3u8
-#EXTINF:-1 group-title="电影频道",CINEMAX(普通话繁体)
-https://tvfix.woodong.workers.dev/hls/cinemax3.m3u8
-#EXTINF:-1 group-title="电影频道",CINEMAX(普通话简体)
-https://tvfix.woodong.workers.dev/hls/cinemax4.m3u8
-#EXTINF:-1 group-title="电影频道",CINEMAX(英语繁体)
-https://tvfix.woodong.workers.dev/hls/cinemax5.m3u8
-#EXTINF:-1 group-title="电影频道",CINEMAX(英语简体)
-https://tvfix.woodong.workers.dev/hls/cinemax6.m3u8
-#EXTINF:-1 group-title="电影频道",CINEMAX(英语英文)
-https://tvfix.woodong.workers.dev/hls/cinemax7.m3u8
 #EXTINF:-1 group-title="电影频道",Paramount Network
 https://tvfix.woodong.workers.dev/hls/paramount.m3u8
 #EXTINF:-1 group-title="电影频道",KIX
