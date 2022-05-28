@@ -31,6 +31,6 @@ nohup wrangler dev --local --ip 0.0.0.0 --port 8000 > /dev/null 2>&1 &
 
 #### 使用方法
 
-将 [channel.m3u](https://github.com/woodongwong/tvfix/blob/main/channel.m3u) 文件中的域名替换成自己的，如：`http://12.0.0.1:8000/hls/jadehk.m3u8`
+将 [channel.m3u](https://github.com/woodongwong/tvfix/blob/main/channel.m3u) 文件中的域名替换成自己的，如：`http://127.0.0.1:8000/hls/jadehk.m3u8`
 
 ### 感谢电视匣
