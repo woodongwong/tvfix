@@ -16,6 +16,7 @@ async function handleRequest(request) {
   const init = {
     headers: {
       'Referer': tvfixHost,
+      'baseurl': tvfixHost,
       'User-Agent': request.headers.get('user-agent')
     }
   };
